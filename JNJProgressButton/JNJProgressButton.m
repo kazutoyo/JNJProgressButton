@@ -309,6 +309,11 @@ typedef NS_ENUM(NSUInteger, JNJProgressButtonState) {
     [self endProgressWithState:JNJProgressButtonStateFinished];
 }
 
+- (void)cancelProgress
+{
+    [self endProgressWithState:JNJProgressButtonStateUnstarted];
+}
+
 #pragma mark - Helpers
 
 - (UIImage *)imageForState:(JNJProgressButtonState)state

@@ -92,6 +92,7 @@ typedef void(^JNJProgressButtonBlockAction)(JNJProgressButton *button);
            animated:(BOOL)animated;
 
 - (void)startProgress;
+- (void)cancelProgress;
 - (void)startFinishedState;
 
 @end
